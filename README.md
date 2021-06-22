@@ -12,4 +12,4 @@ A website to facilitate complete buying and selling of books online.
 PHP, JavaScript, HTML/CSS with a MySQL database
 
 ## How to run the app
-![Running a PHP project using XAMPP] (https://www.edureka.co/blog/how-to-run-a-php-program-in-xampp/)
+![Running a PHP project using XAMPP](https://www.edureka.co/blog/how-to-run-a-php-program-in-xampp/)
