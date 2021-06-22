@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>book</title>
+<link href="booksstyle.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function swap(targetId){
+  if (document.getElementById){
+        target = document.getElementById(targetId);
+            if (target.style.display == "none"){
+                target.style.display = "";
+            } else{
+                target.style.display = "none";
+            }
+                
+  }
+}
+</script>
+</head>
+<body>
+    <div id="container">
+    <!--menu-->
+	<div id="menu">
+    	<ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="viewallbooks.html">View All Books</a></li>
+            <li><a href="sellpage.html">Sell Books</a></li>			
+            <li><a href="aboutus.html">About Us</a></li> 
+            <li><a href="contactus.html">Contact</a></li>
+		</ul>
+    </div>
+    
+	<!--header-->
+    <div id="header">
+    	<div id="special_offers">
+        	<p>
+                <span>25%</span> discounts for
+				purchase over Rs.1000
+        	</p>
+        </div>
+        
+        
+        <div id="login">
+        	<ul>
+                <li><a href="login.html">LOGIN</a></li>
+				<li>New user? <a href="register.html">Register Here</a></li>
+            </ul>
+        </div>
+    </div> 
+        <!--content-->
+    <div id="content">
+    	
+         <div id="content_left">
+        	<div class="content_left_section">
+            	<h1>Categories</h1>
+                <ul>
+                    <li><a href="viewallbooks.html">Architecture</a></li>
+                    <li><a href="#" onclick="swap('sectionTwoLinks');return false;">>Engineering</a></li>
+					     <ul id="sectionTwoLinks" style="display: none;">
+                             <li><a href="viewallbooks.html">Aeronautical</a></li>
+                             <li><a href="viewallbooks.html">Bio-Technology</a></li>
+                             <li><a href="viewallbooks.html">Chemical</a></li>
+                             <li><a href="viewallbooks.html">Civil</a></li>
+							 <li><a href="viewallbooks.html">Computer Science and IT</a></li>
+							 <li><a href="viewallbooks.html">Electrical, Electronics and Communication</a></li>
+							  <li><a href="viewallbooks.html">Mechanical</a></li>
+                        </ul>
+                    <li><a href="#" onclick="swap('sectionThreeLinks');return false;">>Entrance Exams</a></li>
+					     <ul id="sectionThreeLinks" style="display: none;">
+                             <li><a href="viewallbooks.html">JEE Main and Advanced</a></li>
+                             <li><a href="viewallbooks.html">CAT,MBA</a></li>
+                             <li><a href="viewallbooks.html">IAS</a></li>
+                             <li><a href="viewallbooks.html">SSC,BankPO</a></li>
+							 <li><a href="viewallbooks.html">GATE,IES</a></li>
+							 <li><a href="viewallbooks.html">GRE,GMAT,SAT</a></li>
+							 <li><a href="viewallbooks.html">IELTS,TOEFL</a></li>
+                        </ul>
+                    <li><a href="#" onclick="swap('sectionFourLinks');return false;">>Literature and Fiction</a></li>
+					     <ul id="sectionFourLinks" style="display: none;">
+                             <li><a href="viewallbooks.html">Action and Adventure</a></li>
+                             <li><a href="viewallbooks.html">Classics</a></li>
+                             <li><a href="viewallbooks.html">Crime and Mystery Thrillers</a></li>
+                             <li><a href="viewallbooks.html">Horror</a></li>
+							 <li><a href="viewallbooks.html">Love and Romance</a></li>
+							 <li><a href="viewallbooks.html">Poetry</a></li>
+                        </ul>
+                    <li><a href="#" onclick="swap('sectionFiveLinks');return false;">>Non-Fiction</a></li>
+					     <ul id="sectionFiveLinks" style="display: none;">
+                             <li><a href="viewallbooks.html">Arts, Photography and Design</a></li>
+                             <li><a href="viewallbooks.html">Cooking, Food and Drink</a></li>
+                             <li><a href="viewallbooks.html">Language and Linguistics</a></li>
+                             <li><a href="viewallbooks.html">Self-Help Books</a></li>
+							 <li><a href="viewallbooks.html">Psychology</a></li>
+							 <li><a href="viewallbooks.html">Religion and Spirituality</a></li>
+                        </ul>
+                    <li><a href="viewallbooks.html">Coffee Table Books</a></li>
+                    <li><a href="viewallbooks.html">Management Books</a></li>
+            	</ul>
+            </div>
+			<div class="content_left_section">
+            	<h1>Other</h1>
+                <ul>
+                    <li><a href="viewallbooks.html">Antique and Rare</a></li>
+                    <li><a href="#" onclick="swap('sectionSixLinks');return false;">>Children's Books</a></li>
+					    <ul id="sectionSixLinks" style="display: none;">
+                             <li><a href="viewallbooks.html">Novels</a></li>
+                             <li><a href="viewallbooks.html">Comics and Graphic</a></li>
+						</ul>
+					<li><a href="viewallbooks.html">Magazines and Periodicals</a></li>
+            	</ul>
+            </div>
+            
+        </div> 
+        
+        
+        <div id="content_right">
+        	
+            <h1>LOGIN</h1>
+            <form method="post">         
+            <ul>
+	            <li>Username:<input type="text" size=20 maxlength=15 name="username"></li>
+            	<li>Password:<input type="password" size=20 maxlength=15 name="password"></li>
+				<li><input type="submit" value="SUBMIT">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="RESET"></li>
+            </ul>
+            </form>       
+            
+        </div>
+    
+    </div> 
+    
+    <!--footer-->
+    <div id="footer">
+	    <a href="index.html">Home</a> | <a href="aboutus.html">About Us</a> | <a href="faq.html">FAQs</a> | <a href="contactus.html">Contact Us</a><br />
+        <strong>By Shivaranjini Shankar and Esha Pare</strong>
+	</div> 
+</div> <!-- end of container -->
+</body>
+</html>
